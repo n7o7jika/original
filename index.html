@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-           <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
-          <link href="js/slick.css" rel="stylesheet" type="text/css">
+           <link rel="stylesheet" type="text/css" href="slick/slick.css" media="screen" />
+           <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" media="screen" />
             <link rel="shortcut icon" href="image/favicon.ico">
             <link rel="icon" href="image/favicon.ico">
             <link rel="stylesheet" href="style.css">
@@ -12,10 +12,13 @@
     
 
 　　<body>
-　　
-　　
+
 　　
 　　    <div id="main">
+            <div class="bg-switcher">
+            
+            </div>
+　　
 　　        <span class="nav_toggle">
                 <i></i>
                 <i></i>
@@ -25,7 +28,8 @@
                 <ul class="nav_menu_ul">
                     <li class="nav_menu_li"><a href="#main">トップ</a></li>
                     <li class="nav_menu_li"><a href="#">選ぶ</a></li>
-                    <li class="nav_menu_li"><a href="#">おすすめ</a></li>
+                    <li class="nav_menu_li"><a href="#">お勧め
+                    </a></li>
                 </ul>
             </nav>
 　　        <div class="main-visual">
@@ -42,79 +46,45 @@
 　　        <h1>雰囲気に合わせて</h1>
 　　  </div>
 　　  
-　　  <div id="contents">
-　　        <div class="big-box">
-　　        
-　　            <div class="box1">
-　　                <div id="box-title">
-　　                  <a href="http://127.0.0.1:53073/wood.html/"  target="_blank">木</a>
-　　                </div>
-　　            </div>
-　　            
-　　            <div class="box2">
-　　                <div id="box-title">
-　　                  <a href="">海</a>
-　　                </div>
-　　            </div>
-　　            
-　　            <div class="box3">
-　　                <div id="box-title">
-　　                  <a href="">都</a>
-　　                </div>
-　　            </div>
-　　            
-　　            <div class="box4">
-　　                <div id="box-title">
-　　                  <a href="">優</a>
-　　                </div>
-　　            </div>
-　　            
-　　            <div class="box5">
-　　                <div id="box-title">
-　　                  <a href="">楽</a>
-　　                </div>
-　　            </div>
-　　            
-　　            <div class="box6">
-　　                <div id="box-title">
-　　                  <a href="">和</a>
-　　                </div>
-　　            </div>
-　　            
-　　            
-　　            
-　　            
-　　            
-　　        </div>
-　　    </div>
+　　 <div id="contents">
+        <div class="big-box">
+            <div class="box1 boxes">
+            <a href=""target="_blank">木</a></div>
+            <div class="box2 boxes"><a href="" target="_blank">海</a></div>
+            <div class="box3 boxes"><a href="" target="_blank">都</a></div>
+            <div class="box4 boxes"><a href="" target="_blank">優</a></div>
+            <div class="box5 boxes"><a href="" target="_blank">楽</a></div>
+            <div class="box6 boxes"><a href="" target="_blank">和</a></div>
+        </div>
+    </div>
 　　    
+　　  <div class="title">
+　　        <h1>お勧め</h1>
+　　  </div>
 　　  <div id="pic">
 　　    <ul class="slider">
-            <li><a href="#"><img src="image/wa-head2.png" alt="image01"></a></li>
-            <li><a href="#"><img src="image/enjoy_2.png" alt="image02"></a></li>
-            <li><a href="#"><img src="image/head_recommend.jpg" alt="image03"></a></li>
-            <li><a href="#"><img src="image/head_recommend3.png" alt="image04"></a></li>
-            <li><a href="#"><img src="image/head_recommend3.png" alt="image05"></a></li>
-            <li><a href="#"><img src="image/head_recommend4.png" alt="image06"></a></li>
-            <li><a href="#"><img src="image/blue_bed.png" alt="image07"></a></li>
-            <li><a href="#"><img src="image/ai_head.png" alt="image08"></a></li>
+            <li><a href="#"><img src="image/wa-head2.png" alt=""></a></li>
+            <li><a href="#"><img src="image/enjoy_2.png" alt=""></a></li>
+            <li><a href="#"><img src="image/head_recommend.jpg" alt=""></a></li>
+            <li><a href="#"><img src="image/head_recommend3.png" alt=""></a></li>
+            <li><a href="#"><img src="image/head_recommend4.png" alt=""></a></li>
+            <li><a href="#"><img src="image/blue_bed.png" alt=""></a></li>
+            <li><a href="#"><img src="image/ai_head.png" alt=""></a></li>
         </ul>
       </div>
-　　    
-　　    <footer>
+      
+    <footer>
 　　        &copy;2020na-tanoriginal
-　　    </footer>
+    </footer>
+    
+    　</body>
 　　    
-　　    
-　　    
-　　    
-　　    
-　　    
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="js/slick.min.js"></script>
-         <script src="image.js"></script>
-        <script src="slick/slick.min.js"></script>
-　　
-　　    
-　　</body>
+　　    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="particles.js"></script>
+      <script src="setting.js"></script>
+      <script src="jquery.bgswitcher.js"></script>
+     <script src="slideshow.js"></script>
+     <script src="image.js"></script>
+    <script src="slick/slick.min.js"></script>
+
 </html>

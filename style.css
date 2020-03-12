@@ -85,18 +85,15 @@ body{
 
 }
 
-#main{
-    width:100%;
-    width:100%;
-    height:750px;
-    background-image: url(image/head_20_1.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    position:relative;
-    
+.bg-switcher {
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .main-visual{
     position:absolute;
     top:50%;
@@ -117,98 +114,67 @@ img{
     margin-top: 50px;
     font-family: honokamin;
     text-align: center;
-    margin-bottom:500px;
+    margin-bottom:100px;
 }
 
 #contents{
     width:100%;
-    height:auto;
-    position: relative;
+    overflow: hidden;
 }
-
-
 .big-box{
     width:85%;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);  
+    margin:0 auto;
 }
-
-.box1{
-    width:30%;
-    float: left;
-    background-image: url(image/head_wood3.png);
-    background-repeat: no-repeat;
-    height:400px;
-    position:relative;
-    margin-right: 25px;
-}
-
-#box-title a{
+/* boxリンク */
+.boxes a{
     width:100%;
-    display: inline-block;
     text-align: center;
     position: absolute;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);  
+    transform: translate(-50%,-50%);
     font-family: honokamin;
     color:#ffffff;
     font-size: 25px;
+    z-index:1;
+}
+/* boxスタイル */
+.boxes{
+    float: left;
+    width:30%;
+    height:400px;
+    position:relative;
+    margin:0 25px 25px 0;
+    z-index: -1;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 
+.box1{
+    background-image: url(image/head_wood3.png);
+}
 .box2{
-    float: left;
-    width:30%;
     background-image: url(image/sea_head2.png);
-    background-repeat: no-repeat;
-    height:400px;
-    position:relative;
-    margin-right: 25px;
 }
-
 .box3{
-    width:30%;
-    float: left;
     background-image: url(image/head_modern2.png);
-    background-repeat: no-repeat;
-    height:400px;
-    position:relative;
-    margin-right: 25px;
 }
-
 .box4{
-    width:30%;
-    float: left;
     background-image: url(image/yasa-head2.png);
-    background-repeat: no-repeat;
-    height:400px;
-    position:relative;
-    margin-right: 25px;
 }
-
 .box5{
-    width:30%;
-    float: left;
     background-image: url(image/enjoy_head2.png);
-    background-repeat: no-repeat;
-    height:400px;
-    position:relative;
-    margin-right: 25px;
 }
-
 .box6{
-    width:30%;
-    float: left;
     background-image: url(image/wa-head3.png);
-    background-repeat: no-repeat;
-    height:400px;
-    position:relative;
-    margin-right: 25px;
 }
 
-/*左右の矢印の色を変える*/
+#pic{
+width:100%;
+}
+
+*左右の矢印の色を変える*/
 .slick-prev:before,
 .slick-next:before {
     color: #000;
@@ -227,12 +193,19 @@ img{
 .slick-dots li button:before {
     color: #000;
 }
+
 /*スライド画像の横幅可変*/
 img {
     max-width: 100%;
      height: auto;
 }
 
+footer{
+    background-color:#898989 ;
+    color:#ffffff;
+    text-align: center;
+    font-family: honokamin;
+}
 
 /*ここからはwoodのCSS*/
 #{
@@ -354,9 +327,3 @@ img {
     background-color:chocolate;
 }
 
-footer{
-    background-color:#898989 ;
-    color:#ffffff;
-    text-align: center;
-    font-family: honokamin;
-}
