@@ -257,8 +257,6 @@ footer{
   padding-left: 20px;
   position: absolute;
   top: 500px;
-  background-color: aquamarine;
- 
 }
 
 .arrow img{
@@ -322,8 +320,111 @@ footer{
     top:20px;
 }
 
-#piccontent{
+#bigpiccontent{
+    margin:0 auto;
     width:95%;
-    background-color:chocolate;
+    margin-top:30px;
+    height:1300px;
 }
 
+#piccontent{
+     margin:0 auto;
+    width:90%;
+    margin-top:30px;
+    height:1000px;
+}
+
+
+/* グリッドデザイン */
+@media screen and (min-width: 1200px) {
+.grid-container {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (min-width: 993px) and (max-width: 1199px) {
+.grid-container {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+.grid-container {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+.grid-container {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 2;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 2;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+@media screen and (max-width: 480px) {
+.grid-container {
+  -webkit-column-count: 1;
+  -webkit-column-gap: 15px;
+  -webkit-column-fill: auto;
+  -moz-column-count: 1;
+  -moz-column-gap: 15px;
+  -moz-column-fill: balance !important;
+  column-count: 1;
+  column-gap: 15px;
+  column-fill: auto;
+ }
+}
+.grid {
+ display: inline-block;
+ -webkit-column-break-inside: avoid;
+ -moz-column-break-inside: avoid;
+ column-break-inside: avoid;
+ background:#f6f6f6 !important;
+	padding:1em;
+	margin-right:3px;
+	margin-bottom:15px;
+	font-size:14px;
+}
+.grid img{
+	margin-top:1em;
+	margin-bottom:1em
+}
+
+/* BugFix */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ .grid {
+  display: block !important;
+ }
+}
+
+/*画像の拡大lightbox*/
+data-lightbox{
+    
+}
