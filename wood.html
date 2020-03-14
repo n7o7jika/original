@@ -2,7 +2,8 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+            
+        
            <link rel="icon" href="image/favicon.ico">
            <link rel="stylesheet" href="style.css">
         <title>木の雰囲気</title>
@@ -20,7 +21,7 @@
                     <h1>木</h1>
                 <div class="arrow">
                    <img src="image/logo_original_toumei.png"         alt="" width=30px>
-                   <a href="">カテゴリー一覧</a>
+                   <a href="index.html">カテゴリー一覧</a>
                 </div>
                 <div class="arrow-2">
                 <a href="#wood">木</a>
@@ -36,12 +37,25 @@
                         <div class="grid"><img src="image/wood.jpg" alt=""></div>
                         <div class="grid"><img src="image/wood%EF%BC%BF4.jpg" alt=""></div>
                         <div class="grid"><img src="image/wood7.jpg" alt=""></div>
+                        
                         <div class="grid"><img src="image/head_wood1.jpeg" alt=""></div>
-                        <div class="grid">
-                        <a href="image/head_wood2.png" data-lightbox="abc" data-title="木の部屋">
+                       
+                       
+                       <div class="grid">
+                        <button id="btn_open">
                         <img src="image/head_wood2.png" alt="">
-                        </a>
+                        </button>
                         </div>
+                        
+                        
+                            <div id="modal">
+                              <div id="modal_content">
+                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            <button class="btn_close">×    </button>
+                              </div>
+                            </div>
+                        
                         <div class="grid"><img src="image/color01.jpg" alt=""></div>
                         <div class="grid"><img src="image/unico_wood.jpg" alt=""></div>
                 </div>
@@ -54,8 +68,8 @@
                 &copy;2020natanoriginal
             </footer>
             
-            <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+            <script src="modal.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
             
     </body>
     
