@@ -133,7 +133,6 @@ img{
     float: left;
     width:30%;
     height:400px;
-    position:relative;
     margin:0 25px 25px 0;
     z-index: -1;
     overflow:hidden;
@@ -141,15 +140,38 @@ img{
     background-size:cover;
 }
 
+.box1 {
+    background-image: url(image/head_wood3.png);
+    
+}
 
-.big-box p{
-    text-align: center;
+
+.box2{
+    background-image: url(image/sea_head2.png);
+}
+
+.box3{
+    background-image: url(image/head_modern2.png);
+}
+
+.box4{
+    background-image: url(image/yasa-head2.png);
+}
+
+.box5{
+    background-image: url(image/enjoy_2.png);
+}
+
+.box6{
+    background-image: url(image/wa-head3.png);
+}
+
+
+.boxes p{
     font-family: honokamin;
     font-size: 25px;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);  
+   text-align: center;
+    margin-top: 45%;
     color:#ffffff;
  
 }
