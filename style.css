@@ -8,100 +8,39 @@
 	src: url(font/font_1_honokamin.ttf);
 }
 
-/*main*/
-/*ナビゲーションバー（ハンバーガーバー）
-1　ボタンのCSS 【クリック前】*/
 
-.nav_menu_ul{
-    font-family:honokamin;
-    font-size:20px;
-    float: right;
-}
-
-
-.nav_toggle {
-    /*棒線を上から右から配置した*/
-    float: right;
-    right:150px;
-    top:50px;
-    display: block;
-    position: relative;
-    width: 4.0rem;
-    height: 1.5rem;
+.header{
+    width:100%;
+    background-image: url(image/head_to_2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:700px;
+    position:relative;
 }
 
-.nav_toggle i {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #f6f6f6;
-    position: absolute;
-    transition: transform .5s, opacity .5s;
+.headertext h1 {
+    font-family: honokamin;
+    font-size: 50px;
+    position:absolute;
+    top: 50%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+    color:#ffffff;
+    
 }
 
-.nav_toggle i:nth-child(1) {
-    top: 0;
+.headertext p{
+    font-family: honokamin;
+    position:absolute;
+    font-size: 20px;
+    top:55%;
+  left: 50%;
+  -webkit-transform : translate(-50%,-50%);
+  transform : translate(-50%,-50%);
+    color:#ffffff;
+    
 }
-.nav_toggle i:nth-child(2) {
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-.nav_toggle i:nth-child(3) {
-    bottom: 0;
-}
-
-/*2ボタンのCSS 【クリック後　.showが追加されている】
-*/
-.nav_toggle.show i:nth-child(1) {
-    transform: translateY(10px) rotate(-45deg);
-}
-.nav_toggle.show i:nth-child(2) {
-    opacity: 0;
-}
-.nav_toggle.show i:nth-child(3) {
-    transform: translateY(-12px) rotate(45deg);
-}
-
-/*3メニューリストのCSS【クリック前】*/
-.nav {
-    position: fixed;
-    top: 3rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 1rem;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s, visibility .5s;
-}
-
-/*4　メニューリストのCSS【クリック後　.showが追加されている】*/
-.nav.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.bg-slider {
-	width: 100vw;
-	height: 100vh;
-	background-position:center center;
-	background-size: cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.bg-slider__title{
-	color: #000;
-	font-size: 48px;
-    font-family:honokamin;
-	font-weight: bold;
-	text-align:center;
-	
-}
-
-
 
 /*ここから#contentsのとことだよん*/
 .title{
@@ -271,6 +210,8 @@ footer{
     top:83%;
 }
 
+
+
 .arrow::before{
   content: '';
   width: 15px;
@@ -292,6 +233,8 @@ footer{
     position:absolute;
     left:130px;
     top:20px;
+    text-decoration: none;
+    color:#fff;
 }
 
 .arrow-2{
@@ -301,6 +244,8 @@ footer{
   padding-left: 20px;
   position: absolute;
     top:500px;
+    text-decoration: none;
+      color:#fff;
     
 }
 .arrow-2::before{
