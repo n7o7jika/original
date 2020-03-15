@@ -6,4 +6,4 @@ $(function() {
     slidesToShow:6,
     slidesToScroll:1,
 });
-})
+});
